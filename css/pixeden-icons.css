@@ -6,6 +6,10 @@
     display: block;
 
 }
+.pd-icon-slack {
+    background: url(../assets/pd-icons/icon-slack.png) no-repeat;
+    width: 68px;
+}
 .pd-icon-monitor {
     background: url(../assets/pd-icons/icon-monitor.png) no-repeat;
     width: 68px;
