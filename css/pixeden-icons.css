@@ -10,6 +10,14 @@
     background: url(../assets/pd-icons/icon-slack.png) no-repeat;
     width: 68px;
 }
+.pd-icon-facebook {
+    background: url(../assets/pd-icons/icon-facebook.png) no-repeat;
+    width: 68px;
+}
+.pd-icon-twitter {
+    background: url(../assets/pd-icons/icon-twitter.png) no-repeat;
+    width: 68px;
+}
 .pd-icon-monitor {
     background: url(../assets/pd-icons/icon-monitor.png) no-repeat;
     width: 68px;
