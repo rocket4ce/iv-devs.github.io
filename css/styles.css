@@ -8,6 +8,15 @@ GLOBAL STYLES
 =========================================
 -----------------------------------------*/
 
+.ImgCarrousel {
+  width: auto;
+  height: 500px !important;
+  max-height: 500px;
+}
+
+
+
+
 html {
     
     font-size: 100%;        
@@ -1159,8 +1168,8 @@ width: -webkit-calc(100% / 2);
 	        background-size: 100%;
 	position: relative;
 	margin: auto;
-	margin-bottom: 30px;
-	z-index: 5;
+	/*margin-bottom: 30px;
+	z-index: 5;*/
 	-webkit-backface-visibility: hidden;
 	overflow: hidden;
 	border-radius: 4px;
