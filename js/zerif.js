@@ -143,7 +143,7 @@ $("#contact-form").submit(function (e) {
 ================================= */
 
 jQuery(document).ready(function($) {
-    $('.more').on('click', function(event) {
+    $('.more').live('click', function(event) {
         event.preventDefault();
 
         var href = $(this).attr('href') + ' .single-project',
