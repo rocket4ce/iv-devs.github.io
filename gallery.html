@@ -1,0 +1,39 @@
+<div class="single-project">
+   <div class="row" ng-controller="photosCtrl">
+      <div class="col-lg-8 col-md-8">
+
+   <div id="carousel" class="carousel slide" data-ride="carousel" >
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li ng-repeat="photos in photos" ng-class="{ active : $first}" data-target="#carousel" data-slide-to="{{$index}}"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox" >
+    <div ng-repeat="photos in photos" class="item" ng-class="{ active : $first, item : true}" style="height:500px;"><img src="{{photos.src}}"  alt="..."></div>
+
+  </div>
+
+  <!-- Controls -->
+  <!-- Revisar -->
+
+  <a class="left carousel-control" data-slide="prev" href="#carousel"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" data-slide="next" href="#carousel"><span class="glyphicon glyphicon-chevron-right"></span></a>
+ 
+</div>
+
+      </div>
+      <div class="col-lg-4 col-md-4" >
+         <h3 class="dark-text">{{information.name}}</h3>
+         <div class="project-description">{{information.description}}</div>
+         <div class="project-information">
+            <ul>
+               <li><span class="dark-text">Fecha: </span>{{information.date}}</li>
+               <li><span class="dark-text">Lugar: </span> {{information.place}}</li>
+               <li><span class="dark-text">URL: </span><a href="{{information.url}}">{{information.url}}</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+
