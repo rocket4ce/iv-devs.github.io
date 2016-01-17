@@ -520,6 +520,7 @@ input:focus {
 	margin-bottom: 75px;
 }
 .focus-box .service-icon {
+	padding: 2em;
 	margin-bottom: 30px;
 	width: 145px;
 	height: 145px;
