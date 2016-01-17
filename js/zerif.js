@@ -16,6 +16,7 @@ $.vegas('slideshow', {
 =================================== */
 // makes sure the whole site is loaded
 jQuery(window).load(function() {
+  $('#loaded-content').hide();
         // will first fade out the loading animation
 	jQuery(".status").fadeOut();
         // will fade out the whole DIV that covers the website.
@@ -146,20 +147,18 @@ jQuery(document).ready(function($) {
     $('.more').live('click', function(event) {
         event.preventDefault();
 
-        var href = $(this).attr('href') + ' .single-project',
-            portfolioList = $('#portfolio-list'),
+        var portfolioList = $('#portfolio-list'),
             content = $('#loaded-content');
 
         portfolioList.animate({'marginLeft':'-120%'},{duration:400,queue:false});
         portfolioList.fadeOut(400);
         setTimeout(function(){ $('#loader').show(); },400);
         setTimeout(function(){
-            content.load(href, function() {
-                $('#loaded-content meta').remove();
-                $('#loader').hide();
-                content.fadeIn(600);
-                $('#back-button').fadeIn(600);
-            });
+
+          $('#loaded-content meta').remove();
+          $('#loader').hide();
+          content.fadeIn(600);
+          $('#back-button').fadeIn(600);
         },800);
 
     });

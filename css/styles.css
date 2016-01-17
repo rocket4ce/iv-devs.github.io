@@ -633,11 +633,12 @@ input:focus {
 	width: 100%;
 }
 .cbp-rfgrid li {
+	margin: .5em;
 	position: relative;
 	float: left;
 	overflow: hidden;
 	width: 25%; /* Fallback */
-width: -webkit-calc(100% / 4);
+	width: -webkit-calc(100% / 4);
 	width: calc(100% / 4);
 	-webkit-transition: 0.4s all linear;
 	        transition: 0.4s all linear;
