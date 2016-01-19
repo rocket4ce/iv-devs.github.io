@@ -1,12 +1,26 @@
 <!doctype html>
-<html lang="en" ng-app="ivDevsApp">
+<html lang="es" ng-app="ivDevsApp">
    <head>
       <meta charset="UTF-8">
-      <meta name="description" content="Comunidad de programadores IV Región" />
+      <meta name="description" content="Comunidad de programadores IV Región, tenemos como objetivo mejorar el nivel técnico de los profesionales del área TI, mediante meetups y eventos de desarrolladores para desarrolladores en La Serena, Coquimbo y sus alrededores."/>
       <meta name="keywords" content="eventos,meetup,comunidad,cuarta region,chile,la serena,region,informatica,desarrollo"/>
       <meta name="author" content="Mizanur Rahman" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>IV Devs - Programadores IV Región</title>
+
+      <!-- Meta tags facebook -->
+       <meta property="og:image" content="http://ivdevs.com/images/logo.png"/>
+       <meta property="og:title" content="IV Devs"/>
+       <meta property="og:url" content="http://www.ivdevs.com/"/>
+       <meta property="og:description" content="Comunidad de programadores IV Región, tenemos como objetivo mejorar el nivel técnico de los profesionales del área TI, mediante meetups y eventos de desarrolladores para desarrolladores en La Serena, Coquimbo y sus alrededores."/>
+       
+       <!-- Meta tags twitter cards -->
+       <meta name="twitter:card" content="summary_large_image">
+       <meta name="twitter:site" content="@iv_devs">
+       <meta name="twitter:creator" content="@iv_devs">
+       <meta name="twitter:title" content="iv_devs">
+       <meta name="twitter:description" content="Comunidad de programadores IV Región, tenemos como objetivo mejorar el nivel técnico de los profesionales del área TI, mediante meetups y eventos de desarrolladores para desarrolladores en La Serena, Coquimbo y sus alrededores.">
+       <meta name="twitter:image:src" content="http://ivdevs.com/images/logo.png">
 
       <!-- =========================
       FAV AND TOUCH ICONS  
@@ -95,7 +109,7 @@
                   <span class="icon-bar"></span>
                </button>
                <div class="navbar-brand">
-                  <img src="images/logo.png" alt="IV Devs" style="width: 55px;">
+                  <img src="images/logo.png" alt="IV Devs" style="width: 55px;" alt="Logo IV Devs">
                </div>
             </div>
             <nav class="navbar-collapse collapse" role="navigation" id="bs-navbar-collapse">
@@ -254,7 +268,7 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox" >
                            <div ng-repeat="photos in information.images" class="item" ng-class="{ active : $first, item : true}" style="height:500px;">
-                              <img src="{{photos.src}}"  alt="...">
+                              <img src="{{photos.src}}"  alt="{{information.name}}">
                            </div>
                         </div>
 
@@ -331,7 +345,7 @@
                   
                   <li class="skill">
                      <div class="skill-count">
-                        <img src="images/logos/logo_noders2.png" class="skill1" />
+                        <img src="images/logos/logo_noders2.png" class="skill1" alt="Comunidad Noders" />
                      </div>
                      <h6>Noders</h6>
                      <p>Comunidad oficial de NodeJS en chile
@@ -341,7 +355,7 @@
 
                   <li class="skill">
                      <div class="skill-count">
-                        <img src="images/logos/logo_proin2.png" value="89" data-thickness=".2" class="skill3" />
+                        <img src="images/logos/logo_proin2.png" value="89" data-thickness=".2" class="skill3" alt="Comunidad Proin Chile" />
                      </div>
                      <h6>Programadores e Informáticos Chile</h6>
                      <p>
