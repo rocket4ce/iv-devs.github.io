@@ -13,7 +13,7 @@
        <meta property="og:title" content="IV Devs"/>
        <meta property="og:url" content="http://www.ivdevs.com/"/>
        <meta property="og:description" content="Comunidad de programadores IV Región, tenemos como objetivo mejorar el nivel técnico de los profesionales del área TI, mediante meetups y eventos de desarrolladores para desarrolladores en La Serena, Coquimbo y sus alrededores."/>
-       
+
        <!-- Meta tags twitter cards -->
        <meta name="twitter:card" content="summary_large_image">
        <meta name="twitter:site" content="@iv_devs">
@@ -23,7 +23,7 @@
        <meta name="twitter:image:src" content="http://ivdevs.com/images/logo.png">
 
       <!-- =========================
-      FAV AND TOUCH ICONS  
+      FAV AND TOUCH ICONS
       ============================== -->
       <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
       <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
@@ -40,7 +40,7 @@
       <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
 
       <!-- =========================
-       STYLESHEETS      
+       STYLESHEETS
        ============================== -->
        <link rel="stylesheet" href="css/bootstrap.min.css">
        <link rel="stylesheet" href="css/jquery.vegas.min.css">
@@ -59,35 +59,8 @@
          <script src="js/respond.min.js"></script>
       <![endif]-->
 
-      <!-- JQUERY -->
-      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-      <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
-      <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
-      <script type="text/javascript">
-         var app = angular.module("ivDevsApp", ["firebase"]);
 
-         app.controller("galleriesCtrl", function($scope, $firebaseArray, $rootScope) {
-            var ref = new Firebase("https://crackling-heat-5342.firebaseio.com/events");
-            $scope.galleries = $firebaseArray(ref);
-
-            $scope.cargarEvento = function(eventID){
-               $rootScope.$emit('updateEvent', eventID);
-             };
-         });
-
-         app.controller("photosCtrl", function($scope, $firebaseArray, $firebaseObject, $rootScope) {
-            $scope.information = [];
-            $scope.photos = [];
-            $rootScope.$on('updateEvent', function(event, eventID) {
-               var refevent = new Firebase("https://crackling-heat-5342.firebaseio.com/events/"+ eventID );
-               $scope.information = $firebaseObject(refevent);
-            });
-            
-         });
-      </script>
    </head>
 
 
@@ -134,7 +107,7 @@
             <a href="#social" class="btn btn-primary custom-button red-btn">Unete!</a>
          </div>
 
-         <!-- 3 SHORT MESSAGE ABOUT COMPANY 
+         <!-- 3 SHORT MESSAGE ABOUT COMPANY
          <div class="row bottom-message-section">
             <div class="col-lg-4 col-sm-4">
                <div class="short-text">
@@ -167,7 +140,7 @@
          </div>
 
          <div class="row">
-            
+
             <a href="http://slack-ivdevs.herokuapp.com/" target="_blank">
                <div class="col-lg-4 col-sm-4 focus-box green wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
                   <div class="service-icon">
@@ -179,7 +152,7 @@
                   </p>
                </div>
             </a>
-            
+
             <a href="https://www.facebook.com/groups/programadores.iv.region.chile/" target="_blank">
                <div class="col-lg-4 col-sm-4 focus-box red wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
                   <div class="service-icon">
@@ -227,7 +200,7 @@
                Galeria de imagenes de nuestros eventos :D
             </h6>
          </div>
-         
+
          <div class="row projects">
             <div id="loader">
                <div class="loader-icon"></div>
@@ -249,7 +222,7 @@
                         </div>
                      </a>
                   </li>
-               
+
                </ul>
             </div>
          </div>
@@ -301,13 +274,13 @@
 
    <section class="about-us" id="aboutus">
       <div class="container">
-         
+
          <div class="section-header">
 
             <h2 class="white-text">Sobre la comunidad</h2>
             <!-- SUBTITLE
             <h6 class="white-text">
-               
+
             </h6>
             -->
          </div>
@@ -342,7 +315,7 @@
                   <li class="skill">
                      <h6>Comunidades Amigas</h6>
                   </li>
-                  
+
                   <li class="skill">
                      <div class="skill-count">
                         <img src="images/logos/logo_noders2.png" class="skill1" alt="Comunidad Noders" />
@@ -364,7 +337,7 @@
                      </p>
                   </li>
 
-               </ul> 
+               </ul>
             </div>
          </div>
 
@@ -376,7 +349,7 @@
          <h3 class="white-text wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">Stay in touch</h3> <!-- NEWSLETTER SECTION HEADING -->
          <div class="sub-heading white-text wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
             Sign Up for Email Updates on on News &amp; Offers
-         </div> 
+         </div>
 
          <!-- SUBSCRIPTION FORM -->
          <form action="#" class="subscription wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" role="form">
@@ -479,6 +452,16 @@
          </div>
       </div> <!-- / END CONTAINER -->
    </footer> <!-- / END FOOOTER  -->
+
+
+   <!-- JQUERY -->
+   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- Angular Firebase -->
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+   <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+   <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+   <script src="js/app/app.js"></script>
 
    <!-- SCRIPTS -->
    <script src="js/bootstrap.min.js"></script>
