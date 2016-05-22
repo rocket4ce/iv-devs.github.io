@@ -1,476 +1,242 @@
 <!doctype html>
-<html lang="es" ng-app="ivDevsApp">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="description" content="Comunidad de programadores IV Región, tenemos como objetivo mejorar el nivel técnico de los profesionales del área TI, mediante meetups y eventos de desarrolladores para desarrolladores en La Serena, Coquimbo y sus alrededores."/>
-      <meta name="keywords" content="eventos,meetup,comunidad,cuarta region,chile,la serena,region,informatica,desarrollo"/>
-      <meta name="author" content="Mizanur Rahman" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>IV Devs - Programadores IV Región</title>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>IVDevs - Comunidad de Porgramadores</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-      <!-- Meta tags facebook -->
-       <meta property="og:image" content="http://ivdevs.com/images/logo.png"/>
-       <meta property="og:title" content="IV Devs"/>
-       <meta property="og:url" content="http://www.ivdevs.com/"/>
-       <meta property="og:description" content="Comunidad de programadores IV Región, tenemos como objetivo mejorar el nivel técnico de los profesionales del área TI, mediante meetups y eventos de desarrolladores para desarrolladores en La Serena, Coquimbo y sus alrededores."/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
 
-       <!-- Meta tags twitter cards -->
-       <meta name="twitter:card" content="summary_large_image">
-       <meta name="twitter:site" content="@iv_devs">
-       <meta name="twitter:creator" content="@iv_devs">
-       <meta name="twitter:title" content="iv_devs">
-       <meta name="twitter:description" content="Comunidad de programadores IV Región, tenemos como objetivo mejorar el nivel técnico de los profesionales del área TI, mediante meetups y eventos de desarrolladores para desarrolladores en La Serena, Coquimbo y sus alrededores.">
-       <meta name="twitter:image:src" content="http://ivdevs.com/images/logo.png">
-
-      <!-- =========================
-      FAV AND TOUCH ICONS
-      ============================== -->
-      <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
-      <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
-      <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
-      <link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
-
-      <!-- =========================
-       STYLESHEETS
-       ============================== -->
-       <link rel="stylesheet" href="css/bootstrap.min.css">
-       <link rel="stylesheet" href="css/jquery.vegas.min.css">
-       <link rel="stylesheet" href="css/animate.min.css">
-       <link rel="stylesheet" href="css/font-awesome.css">
-
-       <!-- CUSTOM STYLES -->
-       <link rel="stylesheet" href="css/styles.css">
-       <link rel="stylesheet" href="css/responsive.css">
-
-      <!-- WEBFONT -->
-       <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple' rel='stylesheet' type='text/css'>
-
-      <!--[if lt IE 9]>
-         <script src="js/html5shiv.js"></script>
-         <script src="js/respond.min.js"></script>
-      <![endif]-->
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
 
+    <header class="bg-gris">
+        <div class="container">
+            <div class="row p-t-15">
+                <div class="header-redes  col-md-6">
+                    <p class="d-inline c-blanco">Redes Sociales</p>
+                    <ul class="d-inline redes-sociales p-l-50">
+                        <li class="d-inline p-r-15">
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="d-inline p-r-15">
+                            <a href="#">
+                                <i class="fa fa-slack"></i>
+                            </a>
+                        </li>
+                        <li class="d-inline p-r-15">
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="d-inline p-r-15">
+                            <a href="#">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
 
-   </head>
+                    </ul>
+                </div>
 
-
-   <body>
-
-   <div class="preloader">
-      <div class="status">&nbsp;</div>
-   </div>
-
-   <header id="home" class="header">
-
-      <div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
-         <div class="container">
-            <div class="navbar-header responsive-logo">
-               <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-               </button>
-               <div class="navbar-brand">
-                  <img src="images/logo.png" alt="IV Devs" style="width: 55px;" alt="Logo IV Devs">
-               </div>
-            </div>
-            <nav class="navbar-collapse collapse" role="navigation" id="bs-navbar-collapse">
-               <ul class="nav navbar-nav navbar-right responsive-nav main-nav-list">
-                  <li><a href="#home">Inicio</a></li>
-                  <li><a href="#social">Redes</a></li>
-                  <li><a href="#gallery">Galeria</a></li>
-                  <li><a href="#aboutus">Comunidad</a></li>
-                  <li><a href="#contact">Contacto</a></li>
-               </ul>
-            </nav>
-         </div>
-      </div>
-
-      <div class="container">
-
-         <!-- HEADING -->
-         <h1 class="intro">Comunidad Oficial Desarrolladores IV Región - Chile</h1>
-
-         <!-- CALL TO ACTION BUTTONS -->
-         <div class="buttons inpage-scroll">
-            <a href="#social" class="btn btn-primary custom-button red-btn">Unete!</a>
-         </div>
-
-         <!-- 3 SHORT MESSAGE ABOUT COMPANY
-         <div class="row bottom-message-section">
-            <div class="col-lg-4 col-sm-4">
-               <div class="short-text">
-                  <i class="icon icon-fontawesome-webfont-358"></i> Fixed price for packages
-               </div>
-            </div>
-            <div class="col-lg-4 col-sm-4">
-               <div class="short-text">
-                  <i class="icon-fontawesome-webfont-286"></i> Quality product in time
-               </div>
-            </div>
-            <div class="col-lg-4 col-sm-4">
-               <div class="short-text">
-                  <i class="icon-fontawesome-webfont-347"></i> Satisfaction guranteed
-               </div>
-            </div>
-         </div>-->
-      </div>
-   </header>
-
-
-   <section class="focus" id="social">
-      <div class="container">
-
-         <div class="section-header">
-            <h2 class="dark-text">Redes Sociales</h2>
-            <h6>
-               Unete a la comunidad en cualquiera de nuestras redes sociales.
-            </h6>
-         </div>
-
-         <div class="row">
-
-            <a href="http://slack-ivdevs.herokuapp.com/" target="_blank">
-               <div class="col-lg-4 col-sm-4 focus-box green wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                  <div class="service-icon">
-                     <i class="fa fa-slack fa-5x green"></i>
-                  </div>
-                  <h5 class="green-border-bottom">Slack</h5>
-                  <p>
-                     Unete al #Slack de nuestra comunidad y pasemos un buen rato.
-                  </p>
-               </div>
-            </a>
-
-            <a href="https://www.facebook.com/groups/programadores.iv.region.chile/" target="_blank">
-               <div class="col-lg-4 col-sm-4 focus-box red wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                  <div class="service-icon">
-                     <span class="fa fa-facebook fa-5x red"></span>
-                  </div>
-                  <h5 class="red-border-bottom">Facebook</h5>
-                  <p>
-                     Nuestro grupo de Facebook :D
-                  </p>
-               </div>
-            </a>
-
-            <a href="https://twitter.com/iv_devs" target="_blank">
-               <div class="col-lg-4 col-sm-4 focus-box blue wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                  <div class="service-icon">
-                     <i class="fa fa-twitter fa-5x blue"></i>
-                  </div>
-                  <h5 class="blue-border-bottom">Twitter</h5>
-                  <p>
-                     Siguenos en twitter para mantenerte al tanto de nuestras actividades
-                  </p>
-               </div>
-            </a>
-         </div>
-
-      </div>
-   </section>
-
-   <section class="separator-one">
-      <div class="color-overlay">
-         <h3 class="container text wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-            Unete y participa de los eventos organizados por la comunidad!
-         </h3>
-      </div>
-   </section>
-
-   <section class="works" id="gallery">
-      <div class="container">
-
-         <div class="section-header">
-
-            <h2 class="dark-text">Galeria</h2>
-
-            <h6>
-               Galeria de imagenes de nuestros eventos :D
-            </h6>
-         </div>
-
-         <div class="row projects">
-            <div id="loader">
-               <div class="loader-icon"></div>
-            </div>
-            <div class="col-md-12" id="portfolio-list" ng-controller="galleriesCtrl">
-               <ul class="cbp-rfgrid">
-                  <li ng-repeat="gallery in galleries" class="wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                     <a href="#" class="more" ng-click="cargarEvento(gallery.$id);" >
-                        <img src="https://s3.amazonaws.com/ivdevs/events/{{gallery.$id}}/{{gallery.cover}}" alt="{{gallery.$id}}"/>
-                        <div class="project-info">
-                           <div class="project-details">
-                              <h5 class="white-text red-border-bottom">
-                                 {{gallery.name}} - {{gallery.date}}
-                              </h5>
-                              <div class="details white-text">
-                                 {{gallery.kind}}
-                              </div>
-                           </div>
-                        </div>
-                     </a>
-                  </li>
-
-               </ul>
-            </div>
-         </div>
-
-         <div id="loaded-content">
-            <br>
-            <div class="single-project">
-               <div class="row" ng-controller="photosCtrl">
-                  <div class="col-lg-8 col-md-8">
-                     <div id="carousel" class="carousel slide" data-ride="carousel" >
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                           <li ng-repeat="photos in information.images" ng-class="{ active : $first}" data-target="#carousel" data-slide-to="{{$index}}"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox" >
-                           <div ng-repeat="photos in information.images" class="item" ng-class="{ active : $first, item : true}" style="height:500px;">
-                              <img src="{{photos.src}}"  alt="{{information.name}}">
-                           </div>
-                        </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" data-slide="prev" href="#carousel">
-                           <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a class="right carousel-control" data-slide="next" href="#carousel">
-                           <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4" >
-                     <h3 class="dark-text">{{information.name}}</h3>
-                     <div class="project-description">{{information.description}}</div>
-                     <div class="project-information">
+                <div class="header-login col-md-6">
+                    <div class="text-right">
                         <ul>
-                           <li><span class="dark-text">Fecha: </span>{{information.date}}</li>
-                           <li><span class="dark-text">Lugar: </span> {{information.place}}</li>
-                           <li><span class="dark-text">URL: </span><a href="{{information.url}}">{{information.url}}</a></li>
+                            <li class="d-inline p-l-15">
+                                <a href="#">
+                                    <i class="fa fa-user-plus"></i> Registrate
+                                </a>
+                            </li>
+                            <li class="d-inline p-l-15">
+                                <a href="#">
+                                    <i class="fa fa-sign-in"></i> Login@ce
+                                </a>
+                            </li>
                         </ul>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <a id="back-button" class="red-btn" href="#"><i class="icon-fontawesome-webfont-27"></i> Volver</a>
-      </div>
-   </section>
-
-   <section class="about-us" id="aboutus">
-      <div class="container">
-
-         <div class="section-header">
-
-            <h2 class="white-text">Sobre la comunidad</h2>
-            <!-- SUBTITLE
-            <h6 class="white-text">
-
-            </h6>
-            -->
-         </div>
-
-         <!-- 3 COLUMNS OF ABOUT US-->
-         <div class="row">
-
-            <!-- COLUMN 1 - BIG MESSAGE ABOUT THE COMPANY-->
-            <div class="col-lg-4 col-md-4 column">
-               <div class="big-intro wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                  Comunidad desarrolladores IV Región - Chile
-               </div>
+            <hr class="divider">
+            <div class="row p-b-15 p-t-15">
+                <div class="col-md-5">
+                    <div class="logo">
+                        <a href="#">
+                            <img class="img-responsive" src="img/logo.png" alt="IVDevs comunidad de programadores de la iv región">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <nav class="text-right p-t-25">
+                        <ul>
+                            <li class="active"><a href="#">Inicio</a></li>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Inicio</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
+        </div>
+    </header>
 
-            <!-- COLUMN 2 - BRIEF ABOUT THE COMPANY-->
-            <div class="col-lg-4 col-md-4 column">
-               <p class="wow fadeInUp animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                  Este grupo nace para los programadores de todo tipo que sean residentes de la IV región de Chile. La idea es crear este grupo para poder conocer y juntar experiencias. Compartir con la comunidad de desarrolladores de la IV región.
-                  <ul>
-                     <li><a href="https://www.facebook.com/groups/programadores.iv.region.chile/">Link Facebook</a></li>
-                     <li><a href="http://slack-ivdevs.herokuapp.com/">Link Slack</a></li>
-                     <li><a href="https://twitter.com/iv_devs">Link Twitter</a></li>
-                     <li><a href="http://www.meetup.com/es/Programadores-IV-Region-CL/">Link Grupo meetup</a></li>
-                  </ul>
-               </p>
+    <section class="contenidos prox-evento p-t-50 p-b-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="info-evento">
+                        <h1 class="c-blanco f-80">
+                            NOMBRE DEL EVENTO <span class="blink">|</span>
+                        </h1>
+                        <hr class="divider-morado">
+                        
+                        <div class="info-fecha p-t-20">
+                            <ul class="c-blanco">
+                                <li class="f-25 p-b-10"><i class="p-r-15 fa fa-calendar"></i> LUNES 16 DE MAYO</li>
+                                <li class="f-25 p-b-10"><i class="p-r-15 fa fa-clock-o"></i> 19:00 <small>hrs.</small></li>
+                                <li class="f-25 p-b-10"><i class="p-r-15 fa fa-map-marker"></i> “La Brujula Cowork” <br>
+                                    <small class="p-l-40 f-15">
+                                        Juan Cisternas 1960, La Serena
+                                    </small>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="info-descripcion-evento">
+                            <p class="text-justify b-5 c-blanco p-25 m-t-20 bg-morado">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit neque, corporis quos. Placeat fugiat dignissimos veritatis ab est et veniam amet sequi, animi aliquid quaerat nihil aut praesentium ea natus.
+                            </p>
+                        </div>
+
+                        <div class="text-right">
+                            <a class="btn btn-gris p-15 tags" href="#"> ASISTIR A ESTE EVENTO</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="info-exponente">
+                        <figure>
+                            <img class="img-responsive b-5" src="img/expo.jpg" alt="Nombre del Exponente">
+                            <figcaption class="p-t-20">
+                                <h2 class="f-25 c-blanco"> NOMBRE EXPONENTE</h2>
+                            </figcaption>
+                        </figure>
+                        <hr class="divider-morado">
+                        <p class="text-justify c-blanco b-5 p-25 m-t-20 bg-morado">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit neque, corporis quos. Placeat fugiat dignissimos veritatis ab est et veniam amet sequi, animi aliquid quaerat nihil aut praesentium ea natus.
+                        </p>
+                        
+                    </div>
+                </div>
             </div>
-
-            <!-- COLUMN 1 - SKILSS-->
-            <div class="col-lg-4 col-md-4 column">
-               <ul class="skills wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-
-                  <li class="skill">
-                     <h6>Comunidades Amigas</h6>
-                  </li>
-
-                  <li class="skill">
-                     <div class="skill-count">
-                        <img src="images/logos/logo_noders2.png" class="skill1" alt="Comunidad Noders" />
-                     </div>
-                     <h6>Noders</h6>
-                     <p>Comunidad oficial de NodeJS en chile
-                        <a href="http://noders.cl/">Sitio web</a>
-                     </p>
-                  </li>
-
-                  <li class="skill">
-                     <div class="skill-count">
-                        <img src="images/logos/logo_proin2.png" value="89" data-thickness=".2" class="skill3" alt="Comunidad Proin Chile" />
-                     </div>
-                     <h6>Programadores e Informáticos Chile</h6>
-                     <p>
-                        Comunidad de programadores e informáticos de chile
-                        <a href="http://programadores.cl/">Sitio web</a>
-                     </p>
-                  </li>
-
-               </ul>
+        </div>
+    </section>
+    
+    <section class="comunidad">
+        <div class="container">
+            <div class="row">
+                <h2 class="tags text-center c-blanco p-50 f-50">
+                    Comunidad
+                </h2>
             </div>
-         </div>
+        </div>
 
-      </div>
-   </section>
+        <div class="somos-comunidad">
+            <div class="container">
+                <div class="row sin-paddin m-t-30 m-b-30">
+                    <div class="col-md-7 br-t-l-2 br-b-l-2 somos bg-blanco">
+                        <img class="p-20" src="img/root.png">
+                        <div class="p-30">
+                            <h3 class="tags c-negro"> LA COMUNIDAD</h3>
+                            <p class="text-justify">
+                                Este grupo nace para los programadores de todo tipo que sean residentes de la IV región de Chile. La idea es crear este grupo para poder conocer y juntar experiencias. Compartir con la comunidad de desarrolladores de la IV región.<span class="blink">|</span>
+                            </p>
+                        </div>
+                        <div class="text-right p-10">
+                            <img  src="img/logo-rayas.png">
+                        </div>
+                    </div>
+                    <div class="col-md-5 sin galeria">
+                        <img class="img-responsive" src="img/barra-browser.png" alt="">
+                        <div class="galeria-img">
+                            <img class="img-responsive" src="img/galeria-1.jpg" alt="">
+                            <img class="img-responsive" src="img/galeria-1.jpg" alt="">
+                            <img class="img-responsive" src="img/galeria-1.jpg" alt="">
+                            <img class="img-responsive" src="img/galeria-1.jpg" alt="">
+                            <img class="img-responsive" src="img/galeria-1.jpg" alt="">
+                            <img class="img-responsive" src="img/galeria-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h4 class="c-blanco f-30 tags p-b-20">Siguenos en</h4>
 
-   <section class="newsletter">
-      <div class="container">
-         <h3 class="white-text wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">Stay in touch</h3> <!-- NEWSLETTER SECTION HEADING -->
-         <div class="sub-heading white-text wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-            Sign Up for Email Updates on on News &amp; Offers
-         </div>
+                        <ul class="m-b-20">
+                            <li class="d-inline nuestras-redes p-l-10 p-r-10">
+                                <a class="f-50 c-blanco" href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="d-inline nuestras-redes p-l-10 p-r-10">
+                                <a class="f-50 c-blanco" href="#"><i class="fa fa-slack"></i></a>
+                            </li>
+                            <li class="d-inline nuestras-redes p-l-10 p-r-10">
+                                <a class="f-50 c-blanco" href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li class="d-inline nuestras-redes p-l-10 p-r-10">
+                                <a class="f-50 c-blanco" href="#"><i class="fa fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
 
-         <!-- SUBSCRIPTION FORM -->
-         <form action="#" class="subscription wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" role="form">
-            <input type="email" placeholder="Enter email" class="form-control input-box">
-            <button class="btn btn-primary custom-button red-btn">Sign Up</button>
-         </form>
-         <!-- / END SUBSCRIPTION FORM -->
-
-      </div> <!-- / END CONTAINER -->
-   </section>
-
-   <section class="contact-us" id="contact">
-      <div class="container">
-
-         <!-- SECTION HEADER -->
-         <div class="section-header">
-
-            <!-- SECTION TITLE -->
-            <h2 class="white-text">Get in touch</h2>
-
-            <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
-            <h6 class="white-text">
-               Have any question? Drop us a message. We will get back to you in 24 hours.
-            </h6>
-         </div>
-         <!-- / END SECTION HEADER -->
-
-         <!-- CONTACT FORM-->
-         <div class="row">
-            <form role="form" class="contact-form" id="contact-form">
-               <div class="wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                  <div class="col-lg-4 col-sm-4">
-                     <input type="text" name="name" placeholder="Your Name" class="form-control input-box" id="name">
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                     <input type="email" name="email" placeholder="Your Email" class="form-control input-box" id="email">
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                     <input type="text" name="subject" placeholder="Subject" class="form-control input-box" id="subject">
-                  </div>
-               </div>
-
-               <div class="col-md-12 wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                  <textarea name="message" class="form-control textarea-box" placeholder="Your Message" id="message"></textarea>
-               </div>
-               <!-- IF MAIL SENT SUCCESSFULLY -->
-               <h4 class="success pull-left white-text">
-                  Your message has been sent successfully.
-               </h4>
-
-               <!-- IF MAIL SENDING UNSUCCESSFULL -->
-               <h4 class="error pull-left white-text">
-                  E-mail must be valid and message must be longer than 1 character.
-               </h4>
-               <button class="btn btn-primary custom-button red-btn wow fadeInLeft animated" id="submit" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" type="submit">Send Message</button>
-            </form>
-         </div>
-         <!-- / END CONTACT FORM-->
-      </div> <!-- / END CONTAINER -->
-   </section>
-
-   <footer>
-      <div class="container">
-
-         <!-- COMPANY ADDRESS-->
-         <div class="col-md-5 company-details">
-            <div class="icon-top red-text">
-               <i class="fa fa-map-marker"></i>
+                </div>
             </div>
-            La Serena, Chile
-         </div>
+        </div>
 
-         <!-- COMPANY EMAIL-->
-         <div class="col-md-2 company-details">
-            <div class="icon-top green-text">
-               <a href="mailto:contacto@ivdevs.com" ><i class="fa fa-envelope"></i></a>
+        <div class="container">
+            <div class="row">
+                <h2 class="tags text-center c-blanco p-50 f-50">
+                    Nuestros Partners
+                </h2>
             </div>
-         contacto@ivdevs.com
-         </div>
+        </div>
 
-         <!-- COMPANY PHONE NUMBER -->
-         <div class="col-md-2 company-details">
-         <!--
-            <div class="icon-top blue-text">
-               <i class="fa fa-mobile"></i>
-            </div>
-            +613 0000 0000 -->
-         </div>
+    </section>
 
-         <!-- SOCIAL ICON AND COPYRIGHT -->
-         <div class="col-lg-3 col-sm-3 copyright">
-            <ul class="social">
-               <li><a href="https://www.facebook.com/groups/programadores.iv.region.chile/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="https://twitter.com/iv_devs" target="_blank"><i class="fa fa-twitter"></i></a></li>
-               <!-- <li><a href=""><i class="icon-linkedin"></i></a></li> -->
-               <li><a href="http://www.meetup.com/es/IV-DEVS/" target="_blank"><i class="icon-meetup"></i></a></li>
-               <li><a href="http://slack-ivdevs.herokuapp.com/" target="_blank"><i class="fa fa-slack"></i></i></a></li>
-            </ul>
-            ©2015 IV Devs, Desing by Zerif LLC
-         </div>
-      </div> <!-- / END CONTAINER -->
-   </footer> <!-- / END FOOOTER  -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
 
-   <!-- JQUERY -->
-   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <!-- Angular Firebase -->
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-   <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
-   <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
-   <script src="js/app/app.js"></script>
+        <script src="js/main.js"></script>
 
-   <!-- SCRIPTS -->
-   <script src="js/bootstrap.min.js"></script>
-   <script src="js/wow.min.js"></script>
-   <script src="js/jquery.nav.js"></script>
-   <script src="js/smoothscroll.js"></script>
-   <script src="js/jquery.vegas.min.js"></script>
-   <script src="js/zerif.js"></script>
-
-
-</body>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
 </html>
