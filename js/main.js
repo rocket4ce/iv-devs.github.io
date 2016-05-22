@@ -5,6 +5,7 @@ $(document).ready(function(){
   	autoplayTimeout: 2000,
   	loop: true
   });
+  $('.amigos').owlCarousel();
 
 
 });
