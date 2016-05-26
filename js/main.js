@@ -7,5 +7,5 @@ $(document).ready(function(){
   });
   //$('.amigos').owlCarousel();
 
-
+	$("header").sticky({topSpacing:0});
 });

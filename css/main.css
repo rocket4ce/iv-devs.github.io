@@ -61,7 +61,11 @@
 
 	}
 
+blockquote{
+	font-size: 0.9em;
+	font-style: italic;
 
+}
 
 	ul{
 		margin: 0;
@@ -296,6 +300,12 @@
 		border-radius:  0px 0px 2px 0px;
 		-moz-border-radius:  0px 0px 2px 0px;
 		-webkit-border-radius:  0px 0px 2px 0px;
+	}
+
+	.br-l-t-b-r-2{
+		border-radius:  2px 0px 0px 2px;
+		-moz-border-radius:  2px 0px 0px 2px;
+		-webkit-border-radius:  2px 0px 0px 2px;
 	}
 
 	
@@ -899,6 +909,11 @@
 /* ==========================================================================
    Cabecera
    ========================================================================== */
+	.is-sticky header{
+		z-index: 9999!important;
+	} 
+	
+
 	header{
 
 	} 
@@ -955,8 +970,16 @@
    Paginas
    ========================================================================== */
 
-
-
+	.page{
+		background: white;
+	}
+	.page a{
+		color:#345ea8;
+		font-style: italic;
+	}
+	.page a:hover{
+		color:#7f4dee;
+	}
 
 
 
